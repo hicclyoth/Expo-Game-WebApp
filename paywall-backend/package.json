@@ -1,0 +1,11 @@
+{
+  "name": "paywall-backend",
+  "version": "1.0.0",
+  "description": "Backend for the paywall",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \\\"No test specified\\\" && exit 1"
+  },
+  "author": "Clyoth",
+  "license": "ISC"
+}
