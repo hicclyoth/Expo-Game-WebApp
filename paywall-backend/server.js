@@ -26,8 +26,7 @@ app.post("/verify-code", (req, res) => {
       console.error("Database Query Error:", err);
       return res.status(500).json({ error: "Database error", details: err });
     }
-    if (results.length > 0) return res.json({ success: true });
-    return res.status(401).json({ success: false });
+    return res.json({ success: results.length > 0 });
   });
 });
 
