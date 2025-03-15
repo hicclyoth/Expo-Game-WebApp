@@ -7,5 +7,11 @@
     "test": "echo \\\"No test specified\\\" && exit 1"
   },
   "author": "Clyoth",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.4.7",
+    "express": "^4.21.2",
+    "mysql2": "^3.13.0"
+  }
 }
