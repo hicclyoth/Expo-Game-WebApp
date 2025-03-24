@@ -21,7 +21,7 @@ db.connect((err) => {
 });
 app.post("/verify-code", (req, res) => {
   const { code } = req.body;
-  db.query("SELECT * FROM code WHERE code = ?", [code], (err, results) => {
+  db.execute("SELECT * FROM code WHERE code = ?", [code], (err, results) => {
     if (err) {
       console.error("Database Query Error:", err);
       return res.status(500).json({ error: "Database error", details: err });
